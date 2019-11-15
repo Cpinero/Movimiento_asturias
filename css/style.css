@@ -23,6 +23,14 @@ div.modal img{
     width: 100%;
 }
 
+@font-face {
+  font-family: "Omiwa";
+  src: url("../fonts/Omiwa-ALPJD.otf");
+}
+
+.prueba{
+    font-family: "Omiwa";
+}
 
 
 /*--------------- MENU------------------- */
