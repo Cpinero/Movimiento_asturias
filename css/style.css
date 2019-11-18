@@ -115,7 +115,7 @@ nav.menu ul li img.menuImg{
 /*--------------- INICIO------------------- */
 
 section#inicio{
-    background-image: url(../img/fondo_inicio.jpg);
+    background-image: url(../img/prueba3.jpg);
     background-size: cover;
 }
 
@@ -274,7 +274,7 @@ section#contactoTaller i.fa{
 
 /*--------------FOOTER-----------------*/
 footer{
-    background-image: url(../img/footer.jpeg);
+    background-image: url(../img/footer.png);
     background-size: cover;
 }
 
