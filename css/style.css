@@ -28,7 +28,7 @@ div.modal img{
   src: url("../fonts/Omiwa-ALPJD.otf");
 }
 
-.prueba{
+.Omiwa{
     font-family: "Omiwa";
 }
 
@@ -224,6 +224,7 @@ div.cardSub p{
     font-weight: bold;
 }
 
+
 /*--------------- CONTACTO------------------- */
 
 section#contacto {
@@ -263,6 +264,10 @@ section#contacto  input.boton{
  
 }
 
+section#contactoTaller i.fa{
+    font-size: 4em;
+}
+
 .contactoImg{
 	width: 75%;
 	height: 85%;
@@ -270,7 +275,7 @@ section#contacto  input.boton{
 
 /*--------------FOOTER-----------------*/
 footer{
-    background-image: url(../img/footer.png);
+    background-image: url(../img/footer.jpeg);
     background-size: cover;
 }
 
