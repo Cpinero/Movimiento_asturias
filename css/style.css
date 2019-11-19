@@ -111,8 +111,6 @@ nav.menu ul li img.menuImg{
 }
 
 
-
-
 /*--------------- INICIO------------------- */
 
 section#inicio{
@@ -266,6 +264,7 @@ section#contacto  input.boton{
 
 section#contactoTaller i.fa{
     font-size: 4em;
+    color: #0D5169;
 }
 
 .contactoImg{
@@ -292,33 +291,62 @@ footer section div a img{
 /*--------------MEDIA QUERYS-----------------*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .linea{
+    width: 50%;
+    margin: 0 auto;
+}
   /*--------------- MENU------------------- */
-    nav {
-        height: auto; 
-    }
-    
-    section#logo{
-        display: block;
-    }
-    
-    nav.menu ul{
-        justify-content: space-around;
-    
-    }
-    
-    nav.menu ul li:nth-child(1){
+    nav.menu ul li:nth-child(4){
         display: none;
     }
     
+    nav.menu ul li{
+        border-bottom:1px solid #eaeaea;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav.menu ul {
+        flex-direction: column;
+    }
+    
+    nav {
+        width: 60%;
+        height: 100%;
+        margin:0;
+        position: fixed;
+        z-index: 100;
+        left: -100%;
+    }
+    
+    div.menu_bar{
+        position: fixed;
+        z-index:40;
+        top: 0;
+        display:block;
+        width:100%;
+        background:#fff;
+    }
+    div.menu_bar img{
+        display: inline-block;
+        width: 20%;
+    }
+    
+    div.menu_bar span.bt-menu{
+        color: black;
+        cursor: pointer;
+    }
+    
+
+    
   /*--------------- INICIO------------------- */
     div.banner{
-        padding-top: 0px;
-        margin-top: -15px;
-    }
+        padding-top: 25%;
+     }
     
   /*--------------- GALERIA------------------- */
     section#galeria div.carousel{
-        width: 80%;
+        width: 100%;
 
     }
 
@@ -327,14 +355,24 @@ footer section div a img{
     }
     
  /*--------------- PROYECTOS RECIENTES------------------- */
-    section#proyectos  div.proyectoImg img{
-        border-radius: 40px 40px 40px 40px;
-        width: 100%;
-        height: 100%;
+    section#eventos h2{
+        font-size: 50px;
     }
     
-    div.proyectoText{
-        margin-top: 10%;
+    section#eventos div.card h3{
+        font-size: 25px ;
+    }
+    
+
+    section#eventos  div.proyectoImg img.card-img-top{
+        border-radius: 20px 20px 20px 20px;
+        width: 50%;
+        height: 50%;
+        margin: 0 auto;
+    }
+    
+    div.proyectoImg{
+        padding: 30px;
     }
  /*--------------- CONTACTO------------------- */
     section#contacto  form input,
@@ -346,70 +384,105 @@ footer section div a img{
         margin-left: 10%;
     }
     
+    .contactoImg{
+        width: 80%;
+        height: 80%;
+    }
   
 }
 
 
 @media (min-width: 481px) and (max-width: 767px) {
+.linea{
+    width: 50%;
+    margin: 0 auto;
+}
   /*--------------- MENU------------------- */
-    nav {
-        height: auto; 
-    }
-    section#logo{
-        display: block;
-    }
-    
-    nav.menu ul{
-        justify-content: space-around;
-    
-    }
-    
-    nav.menu ul li:nth-child(1){
+    nav.menu ul li:nth-child(4){
         display: none;
     }
     
+    nav.menu ul li{
+        border-bottom:1px solid #eaeaea;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav.menu ul {
+        flex-direction: column;
+    }
+    
+    nav {
+        width: 60%;
+        height: 100%;
+        margin:0;
+        position: fixed;
+        z-index: 100;
+        left: -100%;
+    }
+    
+    div.menu_bar{
+        position: fixed;
+        z-index:40;
+        top: 0;
+        display:block;
+        width:100%;
+        background:#fff;
+    }
+    div.menu_bar img{
+        display: inline-block;
+        width: 20%;
+    }
+    
+    div.menu_bar span.bt-menu{
+        color: black;
+        cursor: pointer;
+    }
+    
+    
   /*--------------- INICIO------------------- */
     div.banner{
-        padding-top: 0px;
-        margin-top: -15px;
-    }
+        padding-top: 25%;
+     }
 
   /*--------------- GALERIA------------------- */
     section#galeria div.carousel{
-        width: 80%;
+        width: 100%;
 
     }
 
     section#galeria div.carousel div.carousel-inner{
         height: 100%;
-        border-radius: 20px 20px 20px 20px;
+    }
+
+    section#galeria{
+        padding: 20px;
     }
     
   /*--------------- SOBRE MI------------------- */
-    .sobremiTitle1{
-		display: block;
-	}
 
-	.sobremiTitle2{
-		display: none;
-	}
     
   /*--------------- PROYECTOS RECIENTES------------------- */
     
-    section#eventos  div.proyectoImg img{
-        border-radius: 30px 30px 30px 30px;
-        width: 100%;
-        height: 100%;
+    section#eventos h2{
+        font-size: 50px;
+    }
+    
+    section#eventos div.card h3{
+        font-size: 25px ;
+    }
+    
+
+    section#eventos  div.proyectoImg img.card-img-top{
+        border-radius: 20px 20px 20px 20px;
+        width: 60%;
+        height: 50%;
+        margin: 0 auto;
     }
     
     div.proyectoImg{
         padding: 30px;
     }
-    
-    div.proyectoText{
-        margin-top: 10%;
-    }
-    
     
   /*--------------- CONTACTO------------------- */
     section#contacto  form input,
@@ -445,13 +518,14 @@ footer section div a img{
 @media (min-width: 0px) and (max-width: 480px) {
     .linea{
     width: 80%;
+    margin: 0 auto;
 }
   /*--------------- MENU------------------- */
     section#logo{
         display: none;
     }
     
-    nav.menu ul li:nth-child(1){
+    nav.menu ul li:nth-child(4){
         display: none;
     }
     
@@ -495,31 +569,30 @@ footer section div a img{
     
   /*--------------- INICIO------------------- */
     div.banner{
-        padding-top: 70px;
+        padding-top: 150px;
     }
 
   /*--------------- GALERIA------------------- */
     section#galeria div.carousel{
-        width: 90%;
+        width: 100%;
 
     }
 
     section#galeria div.carousel div.carousel-inner{
         height: 100%;
-        border-radius: 20px 20px 20px 20px;
     }
-    
-  /*--------------- SOBRE MI------------------- */
-    .sobremiTitle1{
-		display: block;
-	}
-
-	.sobremiTitle2{
-		display: none;
-	}
-
+    section#galeria{
+        padding: 20px;
+    }
+  /*--------------- INFOrMACION IVENTO------------------- */
+  section#infoEvento{
+    text-align: justify;
+  }
+  .niño{
+    display: none;
+  }
   /*--------------- PROYECTOS RECIENTES------------------- */
-    section#eventos  div.proyectoImg img{
+    section#eventos  div.proyectoImg img.card-img-top{
         border-radius: 20px 20px 20px 20px;
         width: 100%;
         height: 100%;
@@ -546,7 +619,10 @@ footer section div a img{
 		order: 1;
 	}
     
-    
+    .iconos  {
+        font-size: 7px;
+    }
+
   
   /*--------------FOOTER-----------------*/
     footer section p{
