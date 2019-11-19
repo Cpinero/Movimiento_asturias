@@ -33,6 +33,10 @@ div.modal img{
     color: #0D5169;
 }
 
+.nosotrosText{
+        text-align: justify;
+    }
+
 
 /*--------------- MENU------------------- */
 
@@ -459,7 +463,7 @@ footer section div a img{
         padding: 20px;
     }
     
-  /*--------------- SOBRE MI------------------- */
+  /*--------------- INFOrMACION EVENTO------------------- */
 
     
   /*--------------- PROYECTOS RECIENTES------------------- */
@@ -519,6 +523,9 @@ footer section div a img{
     .linea{
     width: 80%;
     margin: 0 auto;
+}
+.Omiwa{
+    font-size: 25px;
 }
   /*--------------- MENU------------------- */
     section#logo{
@@ -584,7 +591,12 @@ footer section div a img{
     section#galeria{
         padding: 20px;
     }
-  /*--------------- INFOrMACION IVENTO------------------- */
+
+    .nosotrosText{
+        text-align: center;
+    }
+
+  /*--------------- INFOrMACION EVENTO------------------- */
   section#infoEvento{
     text-align: justify;
   }
